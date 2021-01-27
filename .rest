@@ -4,8 +4,8 @@ POST http://localhost:5000/api/users/
 Content-Type: application/json
 
 {
-	"name": "Deborah",
-	"email": "deb@lbn.com",
+	"name": "Debora",
+	"email": "debas@lbn.com",
 	"isAdmin": "false",
 	"password": "123456"
 }
@@ -42,7 +42,7 @@ Content-Type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMTE1ZDM4ZjQxMzkxNTA4NTQ0ZTRkOCIsImlhdCI6MTYxMTc1NzE5MSwiZXhwIjoxNjE0MzQ5MTkxfQ.fJzlOHnlpuSh06v3kSDBhFKDX-yCTvSJJrV1cccOfjo
 
 {
-	"name": "Pedro"
+	"name": "João"
 	
 }
 
