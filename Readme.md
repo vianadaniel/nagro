@@ -87,7 +87,7 @@ A modelagem do Schema foi feito assim
 
 Primeiro end point com validação do nome, email e tamanho 6 para password, cria usuário
 
-Retorna o Beare token
+Retorna o Bearer token
 
 ```
 ### Create user
