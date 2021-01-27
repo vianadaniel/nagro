@@ -26,7 +26,11 @@
 
 Api rest de usuários e empresas
 
-Recomendo utilizar o Yarn pra instalar
+Instalar
+
+```
+Npm i
+```
 
 Criar o arquivo .env nesse modelo
 
