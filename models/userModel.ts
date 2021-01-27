@@ -32,15 +32,15 @@ export interface UserInterface {
 }
 
 export interface UserDocument extends UserInterface, Document {
-    matchPassword(enteredPassword: string): boolean
+    matchPassword(enteredPassword: string, password: string): boolean
        
 }
 
 // Utilizar compareSync próxima vez
 
-userSchema.methods.matchPassword = async function (enteredPassword: string) {
+userSchema.methods.matchPassword = async function (enteredPassword: string, password:string) {
     
-    return await bcrypt.compare(enteredPassword, this.password);
+    return await bcrypt.compare(enteredPassword, password);
 }
 
 userSchema.pre('save', async function (this: UserDocument, next: any) {
