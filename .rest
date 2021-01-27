@@ -1,0 +1,82 @@
+### Create user
+
+POST http://localhost:5000/api/users/
+Content-Type: application/json
+
+{
+	"name": "Deborah",
+	"email": "deb@lbn.com",
+	"isAdmin": "false",
+	"password": "123456"
+}
+### Login
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{	
+	"email": "jo@lbn.com",	
+	"password": "123456"
+}
+
+### Login Admin
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{	
+	"email": "admin@lbn.com",	
+	"password": "123456"
+}
+
+### Get user profile
+
+get http://localhost:5000/api/users/profile
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMTE1ZDM4ZjQxMzkxNTA4NTQ0ZTRkOCIsImlhdCI6MTYxMTc1NzE5MSwiZXhwIjoxNjE0MzQ5MTkxfQ.fJzlOHnlpuSh06v3kSDBhFKDX-yCTvSJJrV1cccOfjo
+
+### Update user
+
+PUT http://localhost:5000/api/users/profile
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMTE1ZDM4ZjQxMzkxNTA4NTQ0ZTRkOCIsImlhdCI6MTYxMTc1NzE5MSwiZXhwIjoxNjE0MzQ5MTkxfQ.fJzlOHnlpuSh06v3kSDBhFKDX-yCTvSJJrV1cccOfjo
+
+{
+	"name": "Pedro"
+	
+}
+
+### Get brand by user id
+
+GET http://localhost:5000/api/brand/5ffd9ac3a1fbb5490b6090fe
+Content-Type: application/json
+
+### Create brand 
+
+POST http://localhost:5000/api/brand/
+Content-Type: application/json
+
+{
+	 "userId": "5ffd9ac3a1fbb5490b6090fe",
+        "brandName": "Ifood22",
+        "cnpj": 123456781212934,
+        "products": [
+            {"name": "comida", "price":23,
+            "service": [{"name": "Entrega"},{"name":"Devolve"}]
+        
+        }]
+}
+
+### Delete brand by id
+
+DELETE http://localhost:5000/api/brand/delete/60116596f78bd85b835182dd
+Content-Type: application/json
+
+### Update brand by id
+
+PUT http://localhost:5000/api/brand/update/6011654cf78bd85b835182d9
+Content-Type: application/json
+
+{
+	"brandName": "Nagro"
+}
