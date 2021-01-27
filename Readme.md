@@ -29,7 +29,6 @@ Api rest de usuários e empresas
 Instalar
 
 ```
-npm i
 yarn
 ```
 
