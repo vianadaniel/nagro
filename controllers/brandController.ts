@@ -94,7 +94,7 @@ const deleteBrand = asyncHandler(async (request: express.Request, response: expr
     }
 
     response.status(404);
-    throw new Error('User not found');
+    throw new Error('Brand not found');
 });
 
 export {
