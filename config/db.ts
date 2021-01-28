@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
-    const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost/proshop';
+    const MONGO_URI = process.env.MONGO_URI ;
 
     try{
         const connection = await mongoose.connect(MONGO_URI, {
